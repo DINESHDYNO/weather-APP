@@ -12,10 +12,10 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    String cityName = "Katowice"; //city name
-    int currTemp = 30; // current temperature
-    int maxTemp = 30; // today max temperature
-    int minTemp = 2; // today min temperature
+    String cityName = "Katowice"; 
+    int currTemp = 30; 
+    int maxTemp = 30; 
+    int minTemp = 2; 
     Size size = MediaQuery.of(context).size;
     var brightness = MediaQuery.of(context).platformBrightness;
     bool isDarkMode = brightness == Brightness.dark;
@@ -222,7 +222,7 @@ class _HomePageState extends State<HomePage> {
                                   scrollDirection: Axis.horizontal,
                                   child: Row(
                                     children: [
-                                      //TODO: change weather forecast from local to api get
+                      
                                       buildForecastToday(
                                         "Now", //hour
                                         currTemp, //temperature
